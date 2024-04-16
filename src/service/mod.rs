@@ -1,2 +1,2 @@
 pub mod product;
-pub mode notification;
+pub mod notification;
