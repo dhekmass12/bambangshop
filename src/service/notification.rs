@@ -10,5 +10,10 @@ use crate::repostiory::subscriber::SubscriberRepostiory;
 pub struct Notificationservice;
 
 impl NotificationService{
-
+    pub fn subscribe(product_type: &str, subscribe: Subscriber) -> Result<Subscriber>{
+        let product_type_upper: String = product_type.to_uppercase();
+        let product_type_str: &str = &product_type_upper.as_str();
+        let subscriber_result: Subscriber = SubscriberRepostiory::add(product_type_str, subscriber);
+        return Ok(subscriber_result);
+    }
 }
