@@ -20,4 +20,4 @@ impl SubscriberRepostiory{
             .insert(subscriber_value.url.clone(), subscriber_value);
         return subscriber;
     }
-}
+} 
