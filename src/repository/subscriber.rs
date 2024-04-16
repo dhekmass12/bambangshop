@@ -35,7 +35,7 @@ impl SubscriberRepostiory{
         }
         let result = SUBSCRIBERS.get(product_type).unwrap().remove(url);
         if !result.is_none(){
-            return Some(result.unwrap(), 1);
+            return Some(result.unwrap().1);
         }
 
         return None;
