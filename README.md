@@ -13,3 +13,11 @@
     <ol>Menurut pandangan saya, nanti nya setiap model akan berinteraksi satu-sama lain secara langsung, tanpa melibatkan sebuah "universal repository". Tiap model harus mengimplementasikan repositorynya masing-masing berupa map, list, atau yang lainnya di dalam kelasnya. Hal ini tidak efektif karena model yang masih 1 jenis/memiliki banyak kesamaan harus ditaruh pada respository yang sama.</ol>
     <ol>Saya sangat menyukai postman. Saya sudah jatuh hati pada postman segera setelah saya bertemu untuk pertama kalinya dengannya. Postman banyak membantu dalam melakukan method GET, POST, PUT, dan DELETE untuk keperluan individu project maupun group project. Contohnya, kita dapat menentukan keseluruhan request body, parameter, dan juga menampilkan Response dengan mudah dibaca.</ol>
 </li>
+
+# Relection Publisher-3
+
+<li>
+    <ol>Push model, karena publisher harus notify subscriber setiap ada update</ol>
+    <ol>Keuntungan: lebih efisien karena observer mendapat data saat dibutuhkan<br/>Kerugian: Subscriber harus pull secara berkala agar mendapat updated data.</ol>
+    <ol>Program tetap berjalan dengan baik seperti biasa, hanya saja proocess notify berjalan lebih lambat karena notify setiap subscriber dilakukan secara synchronous.</ol>
+</li>
